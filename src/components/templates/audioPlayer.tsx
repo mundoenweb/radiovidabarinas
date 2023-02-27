@@ -14,15 +14,32 @@ const AudioPlayer = () => {
     setAudio(stream)
   }, [])
 
-  const volume = (evt: any) => {
-    const vol = evt.target.value / 100
+  useEffect(() => {
+    if (!audio) return
+    audio.addEventListener('waiting', () => {
+      serViewPlay(styles.button_block)
+      serViewPause(styles.button_none)
+    })
+    audio.addEventListener('playing', () => {
+      serViewPlay(styles.button_none)
+      serViewPause(styles.button_block)
+    })
+  }, [audio])
+
+  const volume = ({ target }: any) => {
+    const vol = target.value / 100
     if (audio) audio.volume = vol
   }
+
   const play = () => {
     audio?.play()
-    serViewPlay(styles.button_none)
-    serViewPause(styles.button_block)
+      .then(() => {
+        serViewPlay(styles.button_none)
+        serViewPause(styles.button_block)
+      })
+      .catch(() => alert('favor verifique su conexión a internet'))
   }
+
   const pause = () => {
     audio?.pause()
     serViewPlay(styles.button_block)
