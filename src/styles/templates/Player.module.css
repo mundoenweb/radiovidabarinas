@@ -65,8 +65,8 @@
 }
 
 .button_block {
-  display: block;
+  display: block !important;
 }
 .button_none {
-  display: none;
+  display: none !important;
 }
