@@ -47,14 +47,14 @@
 .play_buttom {
   background: none;
   border: none;
-  font-size: 44px;
+  font-size: 44px !important;
   cursor: pointer;
 }
 .pause_buttom {
   cursor: pointer;
   background: none;
   border: none;
-  font-size: 44px;
+  font-size: 44px !important;
 }
 .play_buttom:hover {
   color: white !important;
