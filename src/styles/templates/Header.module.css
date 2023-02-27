@@ -1,0 +1,23 @@
+.header {
+  background-color: var(--color-neutral-2);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: var(--zindex-fixed);
+}
+.main_box {
+  padding: 0 12px;
+  height: 56px;
+  color: white;
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  column-gap: 20px;
+  align-items: center;
+  transition: .3s;
+}
+
+.box_social_net {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}

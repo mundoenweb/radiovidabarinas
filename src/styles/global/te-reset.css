@@ -1,0 +1,116 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,300&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+	--color-blue-1: #031329;
+	--color-blue-2: #062752;
+	--color-blue-3: #083A7A;
+	--color-blue-4: #0B4EA3;
+	--color-blue-5: #0E61CC;
+	--color-blue-6: #3E81D6;
+	--color-blue-7: #6EA0E0;
+	--color-blue-8: #9FC0EB;
+	--color-blue-9: #CFDFF5;
+	--color-neutral-1: #0E0F0F;
+	--color-neutral-2: #242525;
+	--color-neutral-3: #2B2C2C;
+  --color-neutral-5: #48494A;
+	--color-neutral-6: #6D6D6E;
+	--color-neutral-7: #919292;
+	--color-neutral-8: #BFBFBF;
+	--color-neutral-9: #DADBDB;
+	--color-neutral-10: #EBEBEB;
+	--color-neutral-11: #f1f1f1;
+  
+	--color-primary: var(--color-blue-5);
+	--color-secondary: var(--color-neutral-2);
+	--color-white: var(--color-neutral-11);
+	--background: var(--color-neutral-3);
+
+  --zindex-back: 1;
+  --zindex-normal: 10;
+  --zindex-tooltip: 100;
+  --zindex-fixed: 1000;
+  --zindex-modal: 10000;
+}
+html {
+  display: block;
+}
+body {
+	padding: 0px;
+	margin: 56px 0px 0px 0px;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--color-neutral-11);
+  background-color: var(--color-neutral-3);;
+}
+@media screen and (min-width: 1024px) {
+	body {
+    margin: 64px 0px 0px 0px;
+  }
+}
+.body-overflow-hidden {
+  overflow: hidden;
+}
+.section-height {
+  min-height: calc(30vh);
+}
+@media screen and (min-width: 640px) {
+	.section-height {
+    min-height: calc(100vh - 364px - 56px);
+  }
+}
+@media screen and (min-width: 1024px) {
+	.section-height {
+    min-height: calc(100vh - 253px - 64px);
+  }
+}
+.te-grid {
+	width: 97.5%;
+	margin: 0px auto;
+	display: grid;
+}
+@media screen and (min-width: 640px) {
+	.te-grid {
+		width: 620px;
+	}
+}
+@media screen and (min-width: 1024px) {
+	.te-grid {
+		width: 984px;
+	}
+}
+@media screen and (min-width: 1280px) {
+	.te-grid {
+		width: 1200px;
+	}
+}
+
+.te-flex {
+	display: flex;
+}
+.te-flex-row {
+	display: flex;
+	flex-direction: row;
+}
+.te-flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+/* a {
+  text-decoration: none;
+  color: var(--color-blue-1);
+  cursor: pointer;
+  transition: .3s;
+} */
+

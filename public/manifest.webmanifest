@@ -1,0 +1,18 @@
+{
+  "short_name": "vida 100.5",
+  "name": "vida 100.5",
+  "description": "Radio Vida 100.5 FM, música refrescante",
+  "background_color": "#2B2C2C",
+  "theme_color": "#2B2C2C",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": ".",
+  "scope": ".",
+  "icons": [
+    {
+      "src": "icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
