@@ -10,7 +10,7 @@ const AudioPlayer = () => {
   const [viewPause, serViewPause] = useState(styles.button_none)
 
   useEffect(() => {
-    const stream = new Audio("https://radiointernet.co/8032/stream")
+    const stream = new Audio("https://app0102.sonicpanelradio.com/8810/stream")
     setAudio(stream)
   }, [])
 
